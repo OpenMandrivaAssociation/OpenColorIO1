@@ -101,7 +101,7 @@ find %{buildroot} -name "*.cmake" -exec mv {} %{buildroot}%{_datadir}/cmake/Modu
 %files
 %doc ChangeLog LICENSE README.md
 %{_bindir}/*
-%{python_sitearch}/Py%{oname}.so
+#{python_sitearch}/Py%{oname}.so
 %{_datadir}/ocio
 
 %files -n %{libname}
