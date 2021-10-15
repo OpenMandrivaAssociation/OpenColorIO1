@@ -3,6 +3,8 @@
 %define	libname	%mklibname %{name} %{major}
 %define	devname	%mklibname %{name} -d
 
+%define oname	OpenColrIO
+
 Summary:	Enables color transforms and image display across graphics apps
 Name:		OpenColorIO1
 Version:	1.1.1
@@ -99,15 +101,15 @@ find %{buildroot} -name "*.cmake" -exec mv {} %{buildroot}%{_datadir}/cmake/Modu
 %files
 %doc ChangeLog LICENSE README.md
 %{_bindir}/*
-#{python_sitearch}/Py%{name}.so
+%{python_sitearch}/Py%{oname}.so
 %{_datadir}/ocio
 
 %files -n %{libname}
 %{_libdir}/libOpenColorIO.so.%{major}*
 
 %files -n %{devname}
-%{_libdir}/lib%{name}.so
-%{_libdir}/pkgconfig/%{name}.pc
-%{_includedir}/%{name}
-%{_includedir}/Py%{name}
+%{_libdir}/lib%{oname}.so
+%{_libdir}/pkgconfig/%{oname}.pc
+%{_includedir}/%{oname}
+%{_includedir}/Py%{oname}
 %{_datadir}/cmake/Modules/*
