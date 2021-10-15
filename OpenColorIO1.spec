@@ -63,7 +63,7 @@ Development files for %{name} library.
 
 %prep
 %setup -qn OpenColorIO-%{version}
-%autopatch-p1
+%autopatch -p1
 # Remove what bundled libraries
 rm -f ext/lcms*
 rm -f ext/tinyxml*
