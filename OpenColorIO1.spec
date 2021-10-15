@@ -12,7 +12,7 @@ License:	BSD
 Url:		http://opencolorio.org/
 # Github archive was generated on the fly using the following URL:
 # https://github.com/imageworks/OpenColorIO/tarball/v1.0.9
-Source0:        https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v%{version}/OpenColorIO-%{version}.tar.gz
 Patch0:		OpenColorIO-1.1.0-compile.patch
 
 BuildRequires:	boost-devel
@@ -62,7 +62,8 @@ Provides:	%{name}-devel = %{version}-%{release}
 Development files for %{name} library.
 
 %prep
-%autosetup -p1
+%setup -qn OpenColorIO-%{version}
+%autopatch-p1
 # Remove what bundled libraries
 rm -f ext/lcms*
 rm -f ext/tinyxml*
