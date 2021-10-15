@@ -3,7 +3,7 @@
 %define	libname	%mklibname %{name} %{major}
 %define	devname	%mklibname %{name} -d
 
-%define oname	OpenColrIO
+%define oname	OpenColorIO
 
 Summary:	Enables color transforms and image display across graphics apps
 Name:		OpenColorIO1
