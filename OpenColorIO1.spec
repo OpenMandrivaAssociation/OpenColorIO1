@@ -11,7 +11,7 @@ Version:	1.1.1
 Release:	6
 Group:		System/Libraries
 License:	BSD
-Url:		http://opencolorio.org/
+Url:		https://opencolorio.org/
 # Github archive was generated on the fly using the following URL:
 # https://github.com/imageworks/OpenColorIO/tarball/v1.0.9
 Source0:        https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v%{version}/OpenColorIO-%{version}.tar.gz
